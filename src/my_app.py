@@ -13,7 +13,7 @@ class MyApp(GdsApp):
     def get_process_invocation(self):
         """ Process invocation """
         # Inject message into command line to print
-        return [sys.executable, "-c", "print(f'{self.message}')"]
+        return [sys.executable, "-c", f"print(f'{self.message}')"]
 
     @classmethod
     def get_name(cls):
